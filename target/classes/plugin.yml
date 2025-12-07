@@ -1,0 +1,9 @@
+name: IdeCodeKalendarz
+main: pl.icecode.kalendarz.CalendarPlugin
+version: 1.0.0
+api-version: 1.16
+author: Cyan_tm
+commands:
+  kalendarz:
+    description: Otwiera kalendarz adwentowy
+    usage: /kalendarz

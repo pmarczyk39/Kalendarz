@@ -1,0 +1,110 @@
+## ===================================================
+## Plugin na kaledarz adwentowy
+## Created: cyan_tm for: IceCode.pl
+## ===================================================
+
+server-name: "MojSerwer"
+
+messages:
+  # Tu wpisz nazwe swojego serwera:
+  prefix: "&aIceCode.pl &7>>"
+  # Wiadomosc po odebraniu
+  claim-success: "&7Gratulacje &e%player&7, odebrales nagrode za dzien &e%day&7!"
+  # Wiadomosc gdy gracz juz odebral
+  already-claimed: "&cJuz odebrales dzien &e%day&c."
+  # Wiadomosc gdy gracz kliknie w okienko ktore nie przypada na dzis
+  not-available: "&7Ten dzien nie jest dostepny teraz."
+  # Wiadomosc gry w sekcji rewards nie skonfigurowano nagrody na dany dzien
+  no-reward: "&cBrak nagrody skonfigurowanej dla dnia &e%day&c. Powiadom administracje."
+  # Wiadomosc gdy ktos probuje uzyc kalendarza poza grudniem
+  only-december: "&7Kalendarz jest dostepny tylko w grudniu."
+
+gui:
+  # Nazwa gui
+  title: "&fKalendarz adwentowy - $name"
+  size: 54
+  # Podswietl (glow) dzisiejsze okienko
+  glow-today: true
+  # Itemki wyswietlane w GUI
+  material:
+    available: LIME_STAINED_GLASS_PANE
+    locked: GRAY_STAINED_GLASS_PANE
+    claimed: RED_STAINED_GLASS_PANE
+  border:
+    enabled: true
+    material: RED_STAINED_GLASS_PANE
+  filler:
+    material: BLACK_STAINED_GLASS_PANE
+  items:
+    info:
+      material: PAPER
+      name: "§eKalendarz §f{month} {year}"
+      lore:
+        - "§7Postep: §a{progress}"
+        - "§7Otworz odpowiednie okienko w grudniu."
+    close:
+      material: BARRIER
+      name: "§cZamknij"
+  sounds:
+    open:
+      name: BLOCK_CHEST_OPEN
+      volume: 1.0
+      pitch: 1.0
+
+# Jesli true — tylko dzisiejszy dzien jest do odebrania (jak klasyczny kalendarz adwentowy)
+only-today: true
+# Jesli true — w grudniu gracz moze odebrac rowniez zalegle okienka (dzisiejszy dzien)
+allow-previous-days: false
+
+# Komendy jakie będą sie wykonywac po odebraniu danego okienka
+# Uwaga!!! Usuń defaultowe komendy!
+
+rewards:
+  1:
+    - "say Gratulacje {player}! Odebrales dzien 1!"
+  2:
+    - "say Gratulacje {player}! Odebrales dzien 2!"
+  3:
+    - "say Gratulacje {player}! Odebrales dzien 3!"
+  4:
+    - "say Gratulacje {player}! Odebrales dzien 4!"
+  5:
+    - "say Gratulacje {player}! Odebrales dzien 5!"
+  6:
+    - "say Gratulacje {player}! Odebrales dzien 6!"
+  7:
+    - "say Gratulacje {player}! Odebrales dzien 7!"
+  8:
+    - "say Gratulacje {player}! Odebrales dzien 8!"
+  9:
+    - "say Gratulacje {player}! Odebrales dzien 9!"
+  10:
+    - "say Gratulacje {player}! Odebrales dzien 10!"
+  11:
+    - "say Gratulacje {player}! Odebrales dzien 11!"
+  12:
+    - "say Gratulacje {player}! Odebrales dzien 12!"
+  13:
+    - "say Gratulacje {player}! Odebrales dzien 13!"
+  14:
+    - "say Gratulacje {player}! Odebrales dzien 14!"
+  15:
+    - "say Gratulacje {player}! Odebrales dzien 15!"
+  16:
+    - "say Gratulacje {player}! Odebrales dzien 16!"
+  17:
+    - "say Gratulacje {player}! Odebrales dzien 17!"
+  18:
+    - "say Gratulacje {player}! Odebrales dzien 18!"
+  19:
+    - "say Gratulacje {player}! Odebrales dzien 19!"
+  20:
+    - "say Gratulacje {player}! Odebrales dzien 20!"
+  21:
+    - "say Gratulacje {player}! Odebrales dzien 21!"
+  22:
+    - "say Gratulacje {player}! Odebrales dzien 22!"
+  23:
+    - "say Gratulacje {player}! Odebrales dzien 23!"
+  24:
+    - "say Gratulacje {player}! Odebrales dzien 24!"
